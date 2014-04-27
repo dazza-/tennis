@@ -5,21 +5,21 @@
 <body class="home">
 
 <div id="page">
-	<a id="open-icon-header" href="#menu"></a>
 
+	<header>
+	    <div class="row">
+			<div class="small-8 show-for-small-only columns lead">
+				<a id="open-icon-header" href="#menu"></a>
+			</div><!-- /large-2 -->	
+			<div class="small-4 medium-3 columns text-right auth lead">
+				<a href="/player/"><img width="30" height="30" src="http://www.gravatar.com/avatar/b96be315140d8ca5f50b03267673c155?s=30&amp;d=wavatar" title="2 Jack Dummy" alt="2 Jack Dummy" /></a>
+				<a href="#" data-reveal-id="myLogin" data-reveal>log-In</a>
+			</div><!-- /large-2 -->	  
+
+	    </div><!-- /row -->
+	</header><!-- /utilityBar -->
 
 	<section role="homepage" class="homepage">
-
-		<!-- <div style="background-color: yellow; height:728px">.</div -->
-
-		<header>
-		    <div class="row">
-		        <div class="small-2 small-offset-10 columns text-right auth">
-		            <a href="/player/"><img width="30" height="30" src="http://www.gravatar.com/avatar/b96be315140d8ca5f50b03267673c155?s=30&amp;d=wavatar" title="2 Jack Dummy" alt="2 Jack Dummy" /></a>
-		            <a href="#" data-reveal-id="myLogin" data-reveal>log-In</a>
-		        </div><!-- /large-2 --> 
-		    </div><!-- /row -->
-		</header><!-- /utilityBar -->
 
 		<div class="row">
 			<div class="large-12 columns">
@@ -54,52 +54,53 @@
 
 
 
-<section role="features" class="features">
+	<section role="features" class="features">
 
-     <div class="row">
-        <div class="large-12 columns">
-            <h4>An easy way to meet new tennis players, improve your game and play fun competitive singles tennis over 3 sets</h4>
-        </div>
-     </div>
+	     <div class="row">
+	        <div class="large-12 columns">
+	            <h3>An easy way to meet new tennis players, improve your game and play fun competitive singles tennis over 3 sets</h3>
+	        </div>
+	     </div>
 
-     <div class="row">
-        <div class="large-4 columns">
-            <h4>Where can you play?</h4>            
-            <p>Tennis Comp started in Sydney and is growing if there isn't a comp near you get in touch and let us know, we only need 8 players to start a comp in your area.</p>
-            <p>You can see the current active comps that you can join here:</p>
-         </div><!-- four -->
-        <div class="large-4 columns">
-            <h4>Rules is rules!</h4>
-            <p>Players must follow the rules. And there is a 3 strikes rule to ensure no dick heads.</p>
-            <p>Matches follow the standard WTA tennis rules of match play, plus a few additional Tennis Comp rules.</p>
-        </div><!-- four -->
-        <div class="large-4 columns">
-            <h4>Ready to play? Sign-up!</h4>
-            <p>Anyone over 18 can play. All standards are welcome. You will be graded by ability when you sign-up and placed in the right division.</p>
-            <p>The first step is to sign-up and create an account. And then join a Comp.</p>
-        </div><!-- four -->
-    </div><!-- row -->
+	     <div class="row">
+	        <div class="large-4 columns">
+	            <h4>Where can you play?</h4>            
+	            <p>Tennis Comp started in Sydney and is growing if there isn't a comp near you get in touch and let us know, we only need 8 players to start a comp in your area.</p>
+	            <p>You can see the current active comps that you can join here:</p>
+	         </div><!-- four -->
+	        <div class="large-4 columns">
+	            <h4>Rules is rules!</h4>
+	            <p>Players must follow the rules. And there is a 3 strikes rule to ensure no dick heads.</p>
+	            <p>Matches follow the standard WTA tennis rules of match play, plus a few additional Tennis Comp rules.</p>
+	        </div><!-- four -->
+	        <div class="large-4 columns">
+	            <h4>Ready to play? Sign-up!</h4>
+	            <p>Anyone over 18 can play. All standards are welcome. You will be graded by ability when you sign-up and placed in the right division.</p>
+	            <p>The first step is to sign-up and create an account. And then join a Comp.</p>
+	        </div><!-- four -->
+	    </div><!-- row -->
 
-    <div class="row">
-        <div class="large-4 columns" style="xbackground-color:white;">
-             <a href="http://www.tenniscomp.com.au/leagues/" class="button pink mini fullwidth">Find Active Comps</a>
-             <a href="http://www.tenniscomp.com.au/leagues/" class="button navy fill">Find Active Comps</a>
-             <a href="http://www.tenniscomp.com.au/leagues/" class="button green">Find Active Comps</a>
-        </div><!-- four -->
-        <div class="large-4 columns">
-             <a href="http://www.tenniscomp.com.au/how-to-play/rules" class="button navy fresh fill">Tennis Comp Rules</a>
-        </div><!-- four -->
-        <div class="large-4 columns">
-             <!-- <a href="http://www.tenniscomp.com.au/auth/register" class="button dark">Sign-up</a> -->
-        </div><!-- four -->
+	     <div class="row">
+	        <div class="large-4 columns">
+	            <h4>Where can you play?</h4>            
+	            <p>Tennis Comp started in Sydney and is growing if there isn't a comp near you get in touch and let us know, we only need 8 players to start a comp in your area.</p>
+	            <p>You can see the current active comps that you can join here:</p>
+	         </div><!-- four -->
+	        <div class="large-4 columns">
+	            <h4>Rules is rules!</h4>
+	            <p>Players must follow the rules. And there is a 3 strikes rule to ensure no dick heads.</p>
+	            <p>Matches follow the standard WTA tennis rules of match play, plus a few additional Tennis Comp rules.</p>
+	        </div><!-- four -->
+	        <div class="large-4 columns">
+	            <h4>Ready to play? Sign-up!</h4>
+	            <p>Anyone over 18 can play. All standards are welcome. You will be graded by ability when you sign-up and placed in the right division.</p>
+	            <p>The first step is to sign-up and create an account. And then join a Comp.</p>
+	        </div><!-- four -->
+	    </div><!-- row -->
 
-    
-    </div><!-- row -->
+	<?php include("_footer.php"); ?>
 
-<?php include("_footer.php"); ?>
-
-</section><!-- reveal -->
-
+	</section><!-- reveal -->
 
 </div><!-- fluid-column -->
 

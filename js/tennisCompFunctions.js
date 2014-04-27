@@ -97,7 +97,9 @@ $(function(){
     });
 
 	$(window).resize(function() {
-        fullheightStuff.height($(window).height());
+        // fullheightStuff.height($(window).height());
+        fullheightStuff.outerHeight($(window).height());
+        // fullheightStuff.outerHeight($(window).outerHeight(true));
         $('.nav-bar').css({position: "absolute", top: $('.logo').outerHeight()});
 	});
 

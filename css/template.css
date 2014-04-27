@@ -10,9 +10,6 @@
    Sample Heading
 ----------------------------------------- */
 
-
-
-
 /* -----------------------------------------
    Basics
 ----------------------------------------- */
@@ -54,7 +51,7 @@ body {
 /* -----------------------------------------
    Site - Structure
 ----------------------------------------- */
-section.features {background-color: #f9f9f9;}
+section.features {background-color: #f9f9f9; padding-top: 130px;}
 /*section.features div:first-child {margin-top: 50px;}*/
 section.features * {color: #1e2939;}
 section.features a {color: #fff;}
@@ -224,15 +221,55 @@ dl.tabs dd:first-child { margin-left: 0;}
 .no-js .tabs-content > .content {display: block; float: none;}
 
 /* -----------------------------------------
+   Alerts 
+----------------------------------------- */
+.alert-box {
+	border-style: solid;
+	border-width: 1px;
+	display: block;
+	font-weight: normal;
+	margin-bottom: 1.25rem;
+	position: relative;
+	padding: 0.875rem 1.5rem 0.875rem 0.875rem;
+	font-size: 0.8125rem;
+	transition: opacity 300ms ease-out;
+	background-color: #2ba6cb;
+	border-color: #258faf;
+	color: white;
+}
+.alert-box .close {
+	font-size: 1.375rem;
+	padding: 9px 6px 4px;
+	line-height: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6875rem;
+	right: 0.25rem;
+	color: #333333; 
+	opacity: 0.3;
+}
+.alert-box .close:hover, .alert-box .close:focus {opacity: 0.5;}
+.alert-box.radius {border-radius: 3px;}
+.alert-box.round {border-radius: 1000px;}
+.alert-box.success {background-color: #5da423; border-color: #508d1e; color: white;}
+.alert-box.alert {background-color: #c60f13; border-color: #aa0d10; color: white;}
+.alert-box.secondary {background-color: #e9e9e9; border-color: #c8c8c8; color: #4f4f4f;}
+.alert-box.warning {background-color: #f08a24; border-color: #de770f; color: white;}
+.alert-box.info {background-color: #a0d3e8; border-color: #74bfdd; color: #4f4f4f;}
+.alert-box.alert-close {opacity: 0;}
+
+
+
+
+/* -----------------------------------------
    Dashboard
 ----------------------------------------- */
 
-section.dashContent .row {max-width: 90.000em;}
 
 /* -----------------------------------------
    I'm not using the word dashboard in the CSS, but dash camel case what it it... dashProfile, etc.
 
-Set the body as normal, but add color to the content section, then push down... that waht I can add graphics to the body on class names
+Set the body as normal, but add color to the content section, then push down... then add graphics to the body on class names
 
 dashboard-home
 dash booking and results
@@ -273,8 +310,6 @@ h1.profile small {display: block; margin-top: 4px;}
 
 /* Dash Content Area -------------------- */
 section.dashContent {
-	background-color: #f9f9f9;
-
 	background: #f9f9f9;
 	background-image: url('../images/chevronLight.png');
 	background: url('../images/chevronLight.png'), -moz-linear-gradient(left, #f9f9f9 0%, #f9f9f9 100%);
@@ -289,16 +324,8 @@ section.dashContent {
 }
 
 
-
-
-
-
-
-
-
-
 /* Dash Alerts -------------------------- */
-.dashAlerts {margin-bottom: 30px;}
+.dashAlerts {margin-top: 30px;}
 
 /* Dash Panels (isotope) ---------------- */
 .dashPanel {	
@@ -325,7 +352,7 @@ section.dashContent {
 	text-align: center;
 }
 
-.dashPanel h3 {color:#000;}
+.dashPanel h4 {color:#000; margin-bottom: 0;}
 
 /* Custom Panels ------------------------ */
 .playOverlay {
@@ -339,8 +366,8 @@ section.dashContent {
 	background: url('../images/player.png'), linear-gradient(to right, #1e2939 0%,#1e2939 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2939', endColorstr='#1e2939',GradientType=1 );
 	background-position: 90% 50%;
-	height: 181px;
 	background-size: cover;
+	line-height: 143px;
 }
 
 .inboxOverlay {
@@ -355,12 +382,18 @@ section.dashContent {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2939', endColorstr='#1e2939',GradientType=1 );
 	background-position: 72% 65%;
 
-	height: 265px;
+	zheight: 265px;
 	color: #fff;
 }
-span.mailCount {font-size: 4em; line-height: 2em; text-align: center; display: inline-block; width: 100%;}
+.inboxOverlay h4 {margin-bottom: 0.5em}
+.inboxOverlay h4, .inboxOverlay * {color: #fff;}
+span.mailCount {font-size: 9.231em; line-height: .9; line-height: 1; text-align: center; display: inline-block; width: 100%;}
 
-.dashPanel li .miniTable {height: 326px; background-color: #c4355e;}
+/* League Snapshot ---------------------- */
+.dashPanel li .miniTable {background-color: #c4355e; padding: -0.9375em; padding: 0;}
+.miniTable table.results thead tr th, .miniTable table.results tbody tr td {display: none}
+.miniTable table.results tr th:nth-child(1), .miniTable table.results tr td:nth-child(1),
+.miniTable table.results tr th:nth-child(7), .miniTable  table.results tr td:nth-child(7) {display: table-cell;}
 
 /* -----------------------------------------
    Buttons
@@ -392,7 +425,11 @@ button, .button {
 .button.navy {border-color: #1e2939; color: #1e2939;}
 .button.green {border-color: #16a085; color: #16a085;}
 .button.mini {font-size: 1em; padding: 0.615em 1.615em 0.462em;}
+.button.large {padding: 0.923em 4.615em 0.769em;}
 .button.fullwidth {width:100%;}
+.button.inline {margin: 0;}
+
+.alert-box button, .alert-box .button {margin: 0 0 0 15px;}
 
 /* Hover States ------------------------- */
 button:hover, button:focus, .button:hover, .button:focus {color: #1e2939; border-color: #1e2939;}

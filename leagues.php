@@ -6,9 +6,9 @@
 
 <div id="page">
 
-	<?php// include("_dropdown.php"); ?>
+	<?php include("_dropdown.php"); ?>
 
-	<?php include("_navigation.php"); ?>
+	<?php// include("_navigation.php"); ?>
 
 
 	<section role="page">
