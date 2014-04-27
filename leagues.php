@@ -6,9 +6,9 @@
 
 <div id="page">
 
-	<?php// include("_topBar-dropdown.php"); ?>
+	<?php// include("_dropdown.php"); ?>
 
-	<?php include("_topbar-navigation.php"); ?>
+	<?php include("_navigation.php"); ?>
 
 
 	<section role="page">
@@ -110,6 +110,7 @@
 </div><!-- fluid-column -->
 
 <?php include("_sidebar.php"); ?>
+<?php include("_getStarted.php"); ?>
 
 </body>
 </html>

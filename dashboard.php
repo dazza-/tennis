@@ -6,11 +6,7 @@
 
 <div id="page">
 	
-
-
-<?php include("_topbar-navigation.php"); ?>
-
-
+<?php include("_navigation.php"); ?>
 
 <section class="dashHeader">
 	<div class="row">
@@ -96,7 +92,6 @@
 </div><!-- fluid-column -->
 
 <?php include("_sidebar.php"); ?>
-
 <?php include("_getStarted.php"); ?>
 
 <script type="text/javascript">

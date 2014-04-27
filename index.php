@@ -104,7 +104,6 @@
 </div><!-- fluid-column -->
 
 <?php include("_sidebar.php"); ?>
-
 <?php include("_getStarted.php"); ?>
 
 </body>

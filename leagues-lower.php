@@ -6,7 +6,7 @@
 
 <div id="page">
 
-	<?php include("_topbar-dropdown.php"); ?>
+	<?php include("_dropdown.php"); ?>
 
 	<section role="leagues">
 
@@ -533,6 +533,7 @@
 </div><!-- fluid-column -->
 
 <?php include("_sidebar.php"); ?>
+<?php include("_getStarted.php"); ?>
 
 <script>
 	$(document).foundation();
