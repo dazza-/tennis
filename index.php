@@ -10,11 +10,13 @@
 
 	<section role="homepage" class="homepage">
 
+		<!-- <div style="background-color: yellow; height:728px">.</div -->
+
 		<header>
 		    <div class="row">
-		        <div class="small-4 small-offset-8 columns text-right auth">
+		        <div class="small-2 small-offset-10 columns text-right auth">
 		            <a href="/player/"><img width="30" height="30" src="http://www.gravatar.com/avatar/b96be315140d8ca5f50b03267673c155?s=30&amp;d=wavatar" title="2 Jack Dummy" alt="2 Jack Dummy" /></a>
-		            <a href="/auth/logout">log-out</a>
+		            <a href="#" data-reveal-id="myLogin" data-reveal>log-In</a>
 		        </div><!-- /large-2 --> 
 		    </div><!-- /row -->
 		</header><!-- /utilityBar -->
@@ -102,6 +104,8 @@
 </div><!-- fluid-column -->
 
 <?php include("_sidebar.php"); ?>
+
+<?php include("_getStarted.php"); ?>
 
 </body>
 </html>

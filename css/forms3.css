@@ -1,0 +1,169 @@
+::-webkit-input-placeholder {color: #1e2939;}
+:-moz-placeholder {color: #1e2939;}
+::-moz-placeholder {color: #1e2939;}
+:-ms-input-placeholder {color: #1e2939;}
+
+
+
+/* Label Styles */
+label {
+	font-size: 1.154em;
+	cursor: pointer;
+	display: block;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+label.right {float: none; text-align: right;}
+label.inline {margin: 0 0 1em 0; padding: 0.625em 0;}
+label small {text-transform: capitalize;}
+
+select {
+	-webkit-appearance: none !important;
+	background-color: #f2f3f4;
+	background-image: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	border: 2px solid #f2f3f4;
+	padding: 0.5em;
+	font-size: 1.154em;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	outline: none;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+select:hover, select:focus {border-color: #1e2939;}
+select::-ms-expand {display: none;}
+
+@-moz-document url-prefix() {
+	select {background: #fafafa;}
+	select:hover {background: #f3f3f3;}
+}
+
+
+/* We use this to get basic styling on all basic form elements */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"],
+input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"],
+input[type="time"], input[type="url"], textarea {
+	-webkit-appearance: none;
+	background-color: #f2f3f4;
+	font-family: inherit;
+	border: 2px solid #f2f3f4;
+	color: #1e2939;
+	display: block;
+	font-size: 1.154em;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	height: 3.077em;
+	width: 100%;
+	-webkit-border-radius: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus,
+input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, textarea:focus {border-color: #121922; outline: none;}
+
+input[type="text"][disabled], fieldset[disabled] input[type="text"], input[type="password"][disabled], 
+fieldset[disabled] input[type="password"], input[type="date"][disabled], fieldset[disabled] input[type="date"], 
+input[type="datetime"][disabled], fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled], 
+fieldset[disabled] input[type="datetime-local"], input[type="month"][disabled], fieldset[disabled] input[type="month"],
+input[type="week"][disabled], fieldset[disabled] input[type="week"], input[type="email"][disabled], 
+fieldset[disabled] input[type="email"], input[type="number"][disabled], fieldset[disabled] input[type="number"],
+input[type="search"][disabled], fieldset[disabled] input[type="search"], input[type="tel"][disabled], 
+fieldset[disabled] input[type="tel"], input[type="time"][disabled], fieldset[disabled] input[type="time"],
+input[type="url"][disabled], fieldset[disabled] input[type="url"], textarea[disabled], 
+fieldset[disabled] textarea {background-color: #dddddd;}
+
+input[type="text"].radius, input[type="password"].radius, input[type="date"].radius,
+input[type="datetime"].radius, input[type="datetime-local"].radius, input[type="month"].radius,
+input[type="week"].radius, input[type="email"].radius, input[type="number"].radius,
+input[type="search"].radius, input[type="tel"].radius, input[type="time"].radius, 
+input[type="url"].radius, textarea.radius {-webkit-border-radius: 3px; border-radius: 3px;}
+
+/* Respect enforced amount of rows for textarea */
+textarea[rows] {height: auto;}
+/* Add height value for select elements to match text input height */
+select {height: 3.077em;}
+/* Adjust margin for form elements below */
+input[type="file"], input[type="checkbox"], input[type="radio"] {margin: 0 0 1em 0;}
+input[type="checkbox"] + label, input[type="radio"] + label {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 1em;
+	margin-bottom: 0;
+	vertical-align: baseline;
+}
+
+/* Normalize file input width */
+input[type="file"] {width: 100%;}
+/* We add basic fieldset styling */
+fieldset {border: 1px solid #dddddd; padding: 1.25em; margin: 1.125em 0;}
+fieldset legend {
+	font-weight: bold;
+	background: white;
+	padding: 0 0.1875em;
+	margin: 0;
+	margin-left: -0.1875em;
+}
+
+/* Error Handling */
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+[data-abide] span.error, [data-abide] small.error {display: none;}
+
+span.error, small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+.error input, .error textarea, .error select {margin-bottom: 0;}
+.error input[type="checkbox"], .error input[type="radio"] {margin-bottom: 1em;}
+.error label, .error label.error {color: #c60f13;}
+.error small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+.error > label > small {
+	color: #676767;
+	background: transparent;
+	padding: 0;
+	text-transform: capitalize;
+	font-style: normal;
+	font-size: 60%;
+	margin: 0;
+	display: inline;
+}
+.error span.error-message {display: block;}
+input.error, textarea.error {margin-bottom: 0;}
+label.error {color: #c60f13;}

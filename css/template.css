@@ -1,0 +1,882 @@
+/* -----------------------------------------
+   TennisComp - Darren Mc Adam + Nik Love
+--------------------------------------------
+:: Site - Structure
+:: Simple Resets
+::
+----------------------------------------- */
+
+/* -----------------------------------------
+   Sample Heading
+----------------------------------------- */
+
+
+
+
+/* -----------------------------------------
+   Basics
+----------------------------------------- */
+* {margin:0; padding:0;}
+
+html,body {
+	width:100%;
+	height:100%;
+	min-height:100%; 
+	padding:0;
+	margin:0;
+	position: relative;
+	cursor: default;
+}
+
+body {
+	background: #c0355f;
+	background: -moz-linear-gradient(left,  #c0355f 0%, #da4f2d 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c0355f), color-stop(100%,#da4f2d));
+	background: -webkit-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: -o-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: -ms-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: linear-gradient(to right,  #c0355f 0%,#da4f2d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0355f', endColorstr='#da4f2d',GradientType=1 );
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;	
+	-webkit-text-size-adjust: none;
+	
+	color: #fff;
+	font-family: 'varela', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 13px; 
+	font-weight: normal; 
+	font-style: normal;
+	line-height: 1;
+	cursor: default;
+	position: relative;
+}
+
+/* -----------------------------------------
+   Site - Structure
+----------------------------------------- */
+section.features {background-color: #f9f9f9;}
+/*section.features div:first-child {margin-top: 50px;}*/
+section.features * {color: #1e2939;}
+section.features a {color: #fff;}
+
+body.dash footer {background-color: #f9f9f9;}
+
+/* -----------------------------------------
+   Sidebar
+----------------------------------------- */
+#menu {background: #1e2939; box-shadow: -3px 0 0 0 rgba(18, 25, 34, 0.9) inset;	color: #fcfcfd;}
+#menu li:after {margin-left: 60px;}
+#page nav {display: none;}
+
+h1.logo {background-color: #121922; text-align: left; margin: 0; padding: 20px 25px; display: block;}
+.mm-menu > .mm-panel {
+    width: 100%;
+    height: 100%;
+    padding: 20px 15px;
+    position: absolute;
+    top: 200px;
+}
+
+.nav-bar {height: auto; padding: 0;}
+.nav-bar > li { 
+	display: block; 
+	position: relative; 
+	padding: 0; 
+	margin: 0; 
+	cursor: pointer;
+}
+.nav-bar > li.active, .nav-bar > li > a {display: block; line-height: 48px; padding-left: 10px; color: #fff;}
+.nav-bar > li > a:hover, .nav-bar > li.active {background: #121922; /*-webkit-border-radius: 2px; border-radius: 2px;*/}
+.nav-bar > li.active:hover {background: #121922; cursor: default;}
+
+/* -----------------------------------------
+   Site Header - Medium + Large -> Responsive
+----------------------------------------- */
+header {border-bottom: 2px solid #f9f9f9; margin-bottom: 40px;}
+header .row div {line-height: 80px;}
+header .lead {background-color: #121922;}
+header .auth img {width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; margin-right: 6px;}
+a#open-icon-header{
+	background: center center no-repeat transparent;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpi/P//PwOtARMDHQBdLGFBYt+nkR2KjEhxQqvIYaR7cD2glSWMo0mY3DiJo5Edi4ZPEqZ7nMSP5pPRon60qB9NwpQDgAADAMIxHUJvWs/TAAAAAElFTkSuQmCC);
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 10px 0;
+}
+
+/* -----------------------------------------
+   Inline Links - Utilities Bar / footer
+----------------------------------------- */
+ul.inline-list {list-style: none; margin: 1.0625em auto; margin-right: 0; padding: 0;}
+ul.inline-list > li {float: left; list-style: none; margin-left: 1.375em;}
+ul.inline-list > li:first-child {margin-left: 0!important;}
+ul.inline-list > li > * {display: inline-block;}
+
+ul.inline-list.subNav {line-height: 80px; margin: 0 auto;}
+ul.inline-list.subNav > li {margin-left: 2.769em;}
+ul.inline-list.subNav > li > a {font-size: 1.154em;}
+
+/* -----------------------------------------
+   Tables - basic
+----------------------------------------- */
+table {border-collapse: collapse; border-spacing: 0; color: inherit; width: 100%;}
+table a {text-decoration: none; color: #fff;}
+.compSwitcher table tr th {width: 18%; text-align: left;}
+
+/* -----------------------------------------
+   Tables - interative hovers + clickable
+----------------------------------------- */
+table.dynamic {}
+table.dynamic thead th {}
+table.dynamic tbody tr {
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	-ms-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+table.dynamic tbody tr.hover {background-color: #e5e400; color: #1e2939; cursor: pointer;}
+table.dynamic tbody tr.hover * {
+	color: #1e2939;
+	-webkit-transition: color 0.15s ease-in;
+	-moz-transition: color 0.15s ease-in;
+	-ms-transition: color 0.15s ease-in;
+	-o-transition: color 0.15s ease-in;
+	transition: color 0.15s ease-in;
+}
+table.dynamic a {text-decoration: none; color: #fff;}
+
+/* -----------------------------------------
+   Tables - Leagues
+----------------------------------------- */
+table.leagues {font-size: 1.4em; color: #fff; text-align: left;}
+table.leagues th, table.leagues td {padding: 25px 15px;}
+table.leagues thead th:last-child , table.leagues tbody td:last-child {text-align: right;}
+table.leagues thead tr th {background-color: #1e2939;}
+table.leagues tbody tr td {border-color: rgba(255, 255, 255, 0.6); border-style: solid; border-width: 2px 0;}
+
+/* -----------------------------------------
+   Tables - Results
+----------------------------------------- */
+table.results {font-size: 1.154em; color: #fff; text-align: right;}
+table.results th, table.results td {padding: 15px;}
+table.results thead th:first-child , table.results tbody td:first-child {text-align: left;}
+table.results thead tr th {background-color: #1e2939;}
+table.results tbody tr td {border-color: rgba(255, 255, 255, 0.6); border-style: solid; border-width: 2px 0;}
+
+/* Hide Columns on mobile --------------- */
+table.results thead tr th, table.results tbody tr td {display: none}
+table.results tr th:nth-child(1), table.results tr td:nth-child(1),
+table.results tr th:nth-child(7), table.results tr td:nth-child(7) {display: table-cell;}
+
+/* -----------------------------------------
+   Tabs
+----------------------------------------- */
+.tabs {
+	border-bottom: solid 2px #fff; 
+	display: block; 
+	height: 40px; 
+	padding: 0; 
+	margin-bottom: 0px; 
+	position: relative; 
+	z-index: 0;
+	*zoom: 1; 
+}
+.tabs:before, .tabs:after {content: " "; display: table;}
+.tabs:after {clear: both;}
+.tabs dd {position: relative; margin-bottom: 0!important; float: left;}
+.tabs dd > a {
+	color: #fff;
+	display: block;
+	font-size: 1.154em;
+	font-weight: normal; 
+	height: 40px; 
+	line-height: 40px; 
+	padding: 0px 23.8px;
+	white-space: nowrap; 
+	margin-right: 20px;
+}
+.tabs dd > a:hover {color: #1e2939;}
+.tabs dd.active a {cursor: default; color: #1e2939; position:relative;}
+dl.tabs dd.active a:after { 
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 44%;
+	bottom: 2px;
+	border-color: #fff transparent;
+	border-style: solid;
+	border-width: 0px 5px 5px 5px;
+}
+dl.tabs dd:first-child { margin-left: 0;}
+.tabs-content {*zoom: 1; margin-bottom: 1.5em; width: 100%;}
+.tabs-content:before, .tabs-content:after {content: " "; display: table;}
+.tabs-content:after {clear: both;}
+.tabs-content > .content {display: none; float: left; padding: 0.9375em 0; width: 100%;}
+.tabs-content > .content.active {display: block; float: none;}
+.tabs-content > .content.contained {padding: 0.9375em;}
+.no-js .tabs-content > .content {display: block; float: none;}
+
+/* -----------------------------------------
+   Dashboard
+----------------------------------------- */
+
+section.dashContent .row {max-width: 90.000em;}
+
+/* -----------------------------------------
+   I'm not using the word dashboard in the CSS, but dash camel case what it it... dashProfile, etc.
+
+Set the body as normal, but add color to the content section, then push down... that waht I can add graphics to the body on class names
+
+dashboard-home
+dash booking and results
+scoreboard
+profile
+inbox
+
+
+----------------------------------------- */
+/*body.dash {
+	background: #c0355f;
+	background-image: url('../images/chevron.png');
+	background: url('../images/chevron.png'), -moz-linear-gradient(left, #c0355f 0%, #da4f2d 100%);
+	background: url('../images/chevron.png'), -webkit-gradient(linear, left top, right top, color-stop(0%,#c0355f), color-stop(100%,#da4f2d));
+	background: url('../images/chevron.png'), -webkit-linear-gradient(left, #c0355f 0%,#da4f2d 100%);
+	background: url('../images/chevron.png'), -o-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: url('../images/chevron.png'), -ms-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: url('../images/chevron.png'), linear-gradient(to right,  #c0355f 0%,#da4f2d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0355f', endColorstr='#da4f2d',GradientType=1 );
+	background-repeat: repeat;
+	background-position: 50% 50%;
+}*/
+
+/*body.dash {background: #f9f9f9;}*/
+/*body.dash {background: aquamarine;}*/
+
+
+
+/* Dash Header -------------------------- */
+section.dashHeader {
+	border-bottom: 2px solid #fff; 	
+	border-bottom: 2px solid #c53a59; 
+	height: 120px;
+}
+img.profile {width: 80px; height: 80px; border-radius: 50%; border: 2px solid #fff;}
+h1.profile {font-size: 2em; line-height: 1; margin: 0 0 0 16px; padding: 18px 0;}
+h1.profile small {display: block; margin-top: 4px;}
+
+/* Dash Content Area -------------------- */
+section.dashContent {
+	background-color: #f9f9f9;
+
+	background: #f9f9f9;
+	background-image: url('../images/chevronLight.png');
+	background: url('../images/chevronLight.png'), -moz-linear-gradient(left, #f9f9f9 0%, #f9f9f9 100%);
+	background: url('../images/chevronLight.png'), -webkit-gradient(linear, left top, right top, color-stop(0%,#f9f9f9), color-stop(100%,#f9f9f9));
+	background: url('../images/chevronLight.png'), -webkit-linear-gradient(left, #f9f9f9 0%,#f9f9f9 100%);
+	background: url('../images/chevronLight.png'), -o-linear-gradient(left,  #f9f9f9 0%,#f9f9f9 100%);
+	background: url('../images/chevronLight.png'), -ms-linear-gradient(left,  #f9f9f9 0%,#f9f9f9 100%);
+	background: url('../images/chevronLight.png'), linear-gradient(to right,  #f9f9f9 0%,#f9f9f9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=1 );
+	background-repeat: repeat;
+	background-position: 50% 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Dash Alerts -------------------------- */
+.dashAlerts {margin-bottom: 30px;}
+
+/* Dash Panels (isotope) ---------------- */
+.dashPanel {	
+	list-style: none;
+	width: auto;
+	height: auto;
+	padding: 0;
+	text-align: center;
+}
+.grid-sizer, .dashPanel li { width: 100%;}
+.dashPanel li {
+	display: block;
+	margin: 0px;
+	text-align: left;
+	padding: 0.9375em;
+	position: relative;
+}
+.dashPanel li div {
+	background-color: #f2f3f4;
+	border: 3px solid #c53a59;
+	color: #000;
+	padding: 1.692em;
+	position: relative;
+	text-align: center;
+}
+
+.dashPanel h3 {color:#000;}
+
+/* Custom Panels ------------------------ */
+.playOverlay {
+	background: #1e2939;
+	background-image: url('../images/player.png');
+	background: url('../images/player.png'), -moz-linear-gradient(left, #1e2939 0%, #1e2939 100%);
+	background: url('../images/player.png'), -webkit-gradient(linear, left top, right top, color-stop(0%,#1e2939), color-stop(100%,#1e2939));
+	background: url('../images/player.png'), -webkit-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/player.png'), -o-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/player.png'), -ms-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/player.png'), linear-gradient(to right, #1e2939 0%,#1e2939 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2939', endColorstr='#1e2939',GradientType=1 );
+	background-position: 90% 50%;
+	height: 181px;
+	background-size: cover;
+}
+
+.inboxOverlay {
+	background: #1e2939;
+	background-image: url('../images/inbox.png');
+	background: url('../images/inbox.png'), -moz-linear-gradient(left, #1e2939 0%, #1e2939 100%);
+	background: url('../images/inbox.png'), -webkit-gradient(linear, left top, right top, color-stop(0%,#1e2939), color-stop(100%,#1e2939));
+	background: url('../images/inbox.png'), -webkit-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/inbox.png'), -o-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/inbox.png'), -ms-linear-gradient(left, #1e2939 0%,#1e2939 100%);
+	background: url('../images/inbox.png'), linear-gradient(to right, #1e2939 0%,#1e2939 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2939', endColorstr='#1e2939',GradientType=1 );
+	background-position: 72% 65%;
+
+	height: 265px;
+	color: #fff;
+}
+span.mailCount {font-size: 4em; line-height: 2em; text-align: center; display: inline-block; width: 100%;}
+
+.dashPanel li .miniTable {height: 326px; background-color: #c4355e;}
+
+/* -----------------------------------------
+   Buttons
+----------------------------------------- */
+button, .button {
+	background: none;
+	background-color: transparent;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 0.923em 2.308em 0.769em;
+	font-size: 1em;
+	color: white;
+	-webkit-transition: all 300ms ease-out;
+	-moz-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+.button.pink {border-color: #c53a59; color: #c53a59;}
+.button.navy {border-color: #1e2939; color: #1e2939;}
+.button.green {border-color: #16a085; color: #16a085;}
+.button.mini {font-size: 1em; padding: 0.615em 1.615em 0.462em;}
+.button.fullwidth {width:100%;}
+
+/* Hover States ------------------------- */
+button:hover, button:focus, .button:hover, .button:focus {color: #1e2939; border-color: #1e2939;}
+button.bright:hover, button.bright:focus, .button.bright:hover, .button.bright:focus {color: #fff; border-color: #fff;}
+button.fresh:hover, button.fresh:focus, .button.fresh:hover, .button.fresh:focus {color: #16a085; border-color: #16a085;}
+button.tint:hover, button.tint:focus, .button.tint:hover, .button.tint:focus {color: #c53a59; border-color: #c53a59;}
+
+/* Hover States - Fill ------------------ */
+button.fill:hover, button.fill:focus, .button.fill:hover, .button.fill:focus {background-color: #1e2939; color: #fff;}
+button.bright.fill:hover, button.bright.fill:focus, .button.bright.fill:hover, .button.bright.fill:focus {background-color: #fff; color: #1e2939;}
+button.fresh.fill:hover, button.fresh.fill:focus, .button.fresh.fill:hover, .button.fresh.fill:focus {background-color: #16a085;}
+button.tint.fill:hover, button.tint.fill:focus, .button.tint.fill:hover, .button.tint.fill:focus {background-color: #c53a59;}
+
+@media only screen and (min-width: 40.063em) {button, .button {display: inline-block;}}
+
+
+
+
+
+
+
+/* -----------------------------------------
+   Forms 
+----------------------------------------- */
+::-webkit-input-placeholder {color: #1e2939;}
+:-moz-placeholder {color: #1e2939;}
+::-moz-placeholder {color: #1e2939;}
+:-ms-input-placeholder {color: #1e2939;}
+
+/* Label Styles */
+label {
+	font-size: 1.154em;
+	cursor: pointer;
+	display: block;
+	font-weight: normal;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+label.right {float: none; text-align: right;}
+label.inline {margin: 0 0 1em 0; padding: 0.625em 0;}
+label small {text-transform: capitalize;}
+
+select {
+	-webkit-appearance: none !important;
+	background-color: #f2f3f4;
+	background-image: url("data:image/svg+xml;base64, PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==");
+	background-repeat: no-repeat;
+	background-position: 97% center;
+	border: 2px solid #f2f3f4;
+	padding: 0.5em;
+	font-size: 1.154em;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	outline: none;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+select:hover, select:focus {border-color: #1e2939;}
+select::-ms-expand {display: none;}
+
+@-moz-document url-prefix() {
+	select {background: #fafafa;}
+	select:hover {background: #f3f3f3;}
+}
+
+
+/* We use this to get basic styling on all basic form elements */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"],
+input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"],
+input[type="time"], input[type="url"], textarea {
+	-webkit-appearance: none;
+	background-color: #f2f3f4;
+	font-family: inherit;
+	border: 2px solid #f2f3f4;
+	color: #1e2939;
+	display: block;
+	font-size: 1.154em;
+	margin: 0 0 1em 0;
+	padding: 0.5em;
+	height: 3.077em;
+	width: 100%;
+	-webkit-border-radius: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: -webkit-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	-moz-transition: -moz-box-shadow 0.45s, border-color 0.45s ease-in-out;
+	transition: box-shadow 0.45s, border-color 0.45s ease-in-out;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus,
+input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus,
+input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, textarea:focus {border-color: #121922; outline: none;}
+
+input[type="text"][disabled], fieldset[disabled] input[type="text"], input[type="password"][disabled], 
+fieldset[disabled] input[type="password"], input[type="date"][disabled], fieldset[disabled] input[type="date"], 
+input[type="datetime"][disabled], fieldset[disabled] input[type="datetime"], input[type="datetime-local"][disabled], 
+fieldset[disabled] input[type="datetime-local"], input[type="month"][disabled], fieldset[disabled] input[type="month"],
+input[type="week"][disabled], fieldset[disabled] input[type="week"], input[type="email"][disabled], 
+fieldset[disabled] input[type="email"], input[type="number"][disabled], fieldset[disabled] input[type="number"],
+input[type="search"][disabled], fieldset[disabled] input[type="search"], input[type="tel"][disabled], 
+fieldset[disabled] input[type="tel"], input[type="time"][disabled], fieldset[disabled] input[type="time"],
+input[type="url"][disabled], fieldset[disabled] input[type="url"], textarea[disabled], 
+fieldset[disabled] textarea {background-color: #dddddd;}
+
+input[type="text"].radius, input[type="password"].radius, input[type="date"].radius,
+input[type="datetime"].radius, input[type="datetime-local"].radius, input[type="month"].radius,
+input[type="week"].radius, input[type="email"].radius, input[type="number"].radius,
+input[type="search"].radius, input[type="tel"].radius, input[type="time"].radius, 
+input[type="url"].radius, textarea.radius {-webkit-border-radius: 3px; border-radius: 3px;}
+
+/* Respect enforced amount of rows for textarea */
+textarea[rows] {height: auto;}
+/* Add height value for select elements to match text input height */
+select {height: 3.077em;}
+/* Adjust margin for form elements below */
+input[type="file"], input[type="checkbox"], input[type="radio"] {margin: 0 0 1em 0;}
+input[type="checkbox"] + label, input[type="radio"] + label {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 1em;
+	margin-bottom: 0;
+	vertical-align: baseline;
+}
+
+/* Normalize file input width */
+input[type="file"] {width: 100%;}
+/* We add basic fieldset styling */
+fieldset {border: 1px solid #dddddd; padding: 1.25em; margin: 1.125em 0;}
+fieldset legend {
+	font-weight: bold;
+	background: white;
+	padding: 0 0.1875em;
+	margin: 0;
+	margin-left: -0.1875em;
+}
+
+/* Error Handling */
+[data-abide] .error small.error, [data-abide] span.error, [data-abide] small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+[data-abide] span.error, [data-abide] small.error {display: none;}
+
+span.error, small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+.error input, .error textarea, .error select {margin-bottom: 0;}
+.error input[type="checkbox"], .error input[type="radio"] {margin-bottom: 1em;}
+.error label, .error label.error {color: #c60f13;}
+.error small.error {
+	display: block;
+	padding: 0.375em 0.5625em 0.5625em;
+	margin-top: -1px;
+	margin-bottom: 1em;
+	font-size: 0.75em;
+	font-weight: normal;
+	font-style: italic;
+	background: #c60f13;
+	color: white;
+}
+.error > label > small {
+	color: #676767;
+	background: transparent;
+	padding: 0;
+	text-transform: capitalize;
+	font-style: normal;
+	font-size: 60%;
+	margin: 0;
+	display: inline;
+}
+.error span.error-message {display: block;}
+input.error, textarea.error {margin-bottom: 0;}
+label.error {color: #c60f13;}
+
+/* -----------------------------------------
+   Breadcrumbs
+----------------------------------------- */
+.breadcrumbs {display: block; padding: 0.5625em 0.875em 0.5625em 0; overflow: hidden; margin-left: 0; list-style: none;}
+.breadcrumbs > * {margin: 0; float: left; font-size: 1em; text-transform: uppercase;}
+.breadcrumbs > *.current {cursor: default; color: #e5e400;}
+.breadcrumbs > *.current a {cursor: default; color: #e5e400;}
+.breadcrumbs > *.current:hover, .breadcrumbs > *.current:hover a, .breadcrumbs > *.current:focus, .breadcrumbs > *.current:focus a {text-decoration: none;}
+.breadcrumbs > *.unavailable {color: #999999;}
+.breadcrumbs > *.unavailable a {color: #999999;}
+.breadcrumbs > *.unavailable:hover, .breadcrumbs > *.unavailable:hover a, .breadcrumbs > *.unavailable:focus, .breadcrumbs > *.unavailable a:focus {text-decoration: none; color: #999999; cursor: default;}
+.breadcrumbs > *:before {content: "/"; color: #1e2939; margin: 0 0.75em; position: relative;}
+.breadcrumbs > *:first-child:before {content: " "; margin: 0;}
+
+/* -----------------------------------------
+   Tooltips
+----------------------------------------- */
+.has-tip {cursor: help; color: #e5e400;}
+.has-tip:hover, .has-tip:focus { color: #fff;}
+.has-tip.tip-left, .has-tip.tip-right {float: none !important;}
+.tooltip {
+	display: none;
+	position: absolute;
+	z-index: 999;
+	font-weight: normal;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.75rem;
+	max-width: 85%;
+	left: 50%;
+	width: 100%;
+	color: white;
+	background: #333333;
+}
+.tooltip > .nub {display: block; left: 5px; position: absolute; width: 0; height: 0; border: solid 5px; border-color: transparent transparent #333333 transparent; top: -10px;}
+.tooltip > .nub.rtl {left: auto; right: 5px;}
+.tooltip.radius {-webkit-border-radius: 3px; border-radius: 3px;}
+.tooltip.round {-webkit-border-radius: 1000px; border-radius: 1000px;}
+.tooltip.round > .nub {left: 2rem;}
+.tooltip.opened {color: #008cba !important; border-bottom: dotted 1px #003f54 !important;}
+.tap-to-close {display: block; font-size: 0.625rem; color: #777777; font-weight: normal;}
+
+/* -----------------------------------------
+   Reveal
+----------------------------------------- */
+.reveal-modal-bg {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: #1e2939;
+	background: rgba(30, 41, 57, 0.90);
+	z-index: 99;
+	display: none;
+	top: 0;
+	left: 0;
+}
+dialog, .reveal-modal {
+	visibility: hidden;
+	display: none;
+	position: absolute;
+	z-index: 100;
+	width: 100vw;
+	top: 0;
+	left: 0;
+	padding: 1.25rem;
+	border: 2px solid #1e2939;
+	background: #c0355f;
+	background: -moz-linear-gradient(left,  #c0355f 0%, #da4f2d 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c0355f), color-stop(100%,#da4f2d));
+	background: -webkit-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: -o-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: -ms-linear-gradient(left,  #c0355f 0%,#da4f2d 100%);
+	background: linear-gradient(to right,  #c0355f 0%,#da4f2d 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0355f', endColorstr='#da4f2d',GradientType=1 );
+}
+
+@media only screen and (max-width: 40em) { dialog, .reveal-modal {height: 100vh; min-height: 100vh;} }
+@media only screen and (min-width: 40.063em) { dialog, .reveal-modal {left: 50%;} }
+dialog .column, dialog .columns, .reveal-modal .column, .reveal-modal .columns {min-width: 0;}
+dialog > :first-child, .reveal-modal > :first-child {margin-top: 0;}
+dialog > :last-child, .reveal-modal > :last-child {margin-bottom: 0;}
+@media only screen and (min-width: 40.063em) { dialog, .reveal-modal {margin-left: -40%; width: 80%;} }
+@media only screen and (min-width: 40.063em) { dialog, .reveal-modal {top: 6.25rem;} }
+dialog .close-reveal-modal, .reveal-modal .close-reveal-modal {
+	font-size: 2.5rem;
+	line-height: 1;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.6875rem;
+	color: #1e2939;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+dialog[open] {display: block; visibility: visible;}
+
+@media only screen and (min-width: 40.063em) { dialog, .reveal-modal {padding: 1.875rem;} dialog.full, .reveal-modal.full {top: 0; left: 0; height: 100vh; min-height: 100vh; margin-left: 0 !important;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog, .reveal-modal {top: 6.25rem;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.tiny, .reveal-modal.tiny {margin-left: -15%; width: 30%;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.small, .reveal-modal.small {margin-left: -20%; width: 40%;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.medium, .reveal-modal.medium {margin-left: -30%; width: 60%;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.large, .reveal-modal.large {margin-left: -35%; width: 70%;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.xlarge, .reveal-modal.xlarge {margin-left: -47.5%; width: 95%;} }
+@media only screen and (min-width: 40.063em) and (min-width: 40.063em) { dialog.full, .reveal-modal.full {margin-left: -50vw; width: 100vw;} }
+@media print { dialog, .reveal-modal {background: white !important;} }
+
+
+@media only screen and (min-width: 64.063em) { dialog.medium, .reveal-modal.medium {margin-left: -16%; width: 32%;} }
+@media only screen and (min-width: 90.063em) { dialog.medium, .reveal-modal.medium {margin-left: -13%; width: 26%;} }
+@media only screen and (min-width: 120em) { dialog.medium, .reveal-modal.medium {margin-left: -10%; width: 20%;} }
+
+/* -----------------------------------------
+   Flip Clock
+----------------------------------------- */
+.flip {
+	background: #eee;
+	border:2px solid #7c8c94;
+	border-radius: 4px;
+    font-size: 36px;
+	font-weight:bold;
+    height: 40px;
+    line-height: 40px;
+	padding:0px 5px 1px 5px;
+    position: relative;
+}
+.flip:first-child {margin-right:6px;}
+
+.stack {
+	border-bottom:2px solid #7c8c94;
+	border-top:1px solid #000;
+	border-radius: 4px;
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, .2);
+	height: 22px;
+	left:0px;
+    position: absolute;
+    top: 21px;
+    width: 100%;
+}
+
+.stack:before, .stack:after  {
+	content: "";
+	position: absolute;
+	height:6px;
+	top:-3px;
+	width:3px;
+	background: #4d4d4d;
+	background: -moz-linear-gradient(top,  #4d4d4d 0%, #303030 50%, #1e1e1e 51%, #121212 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4d4d4d), color-stop(50%,#303030), color-stop(51%,#1e1e1e), color-stop(100%,#121212));
+	background: -webkit-linear-gradient(top,  #4d4d4d 0%,#303030 50%,#1e1e1e 51%,#121212 100%);
+	background: -o-linear-gradient(top,  #4d4d4d 0%,#303030 50%,#1e1e1e 51%,#121212 100%);
+	background: -ms-linear-gradient(top,  #4d4d4d 0%,#303030 50%,#1e1e1e 51%,#121212 100%);
+	background: linear-gradient(to bottom,  #4d4d4d 0%,#303030 50%,#1e1e1e 51%,#121212 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d4d4d', endColorstr='#121212',GradientType=0 );
+}
+.stack:before {left:0;}
+.stack:after {right:0;}
+
+/* -----------------------------------------
+   Foundation Breakpoints
+--------------------------------------------
+max-width: 40em (640px) -> Small & Up
+min-width: 40.063em (641px) -> Medium & Up
+min-width: 40.063em (641px) | max-width: 64em (1024px) -> tablet-only
+min-width: 64.063em (1025px) -> Large & Up
+min-width: 64.063em (1025px) | max-width: 90em (1440px) -> large screen-only
+min-width: 90.063em (1441px) -> xLarge & Up
+min-width: 90.063em (1441px) | max-width: 120em (1920px) -> xlarge screen-only
+min-width: 120.063em (1921px) -> xxLarge & Up
+----------------------------------------- */
+/* Small & Up --------------------------- */
+@media only screen { }
+@media only screen and (max-width: 40em) { }
+/* Medium & Up -------------------------- */
+@media only screen and (min-width: 40.063em) { }
+/* Medium (tablets) --------------------- */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { }
+/* Large & Up (desktop) ----------------- */
+@media only screen and (min-width: 64.063em) { }
+/* xLarge & Up (widescreen) ------------- */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { }
+/* xxLarge & Up (tv's man) -------------- */
+@media only screen and (min-width: 120.063em) { }
+
+
+/* Medium & Up -------------------------- */
+@media only screen and (min-width: 40.063em) { 
+	html, body {overflow: auto!important;}
+	a#open-icon-header {display: none;}
+	#mmenu-blocker {display: none !important;}
+	#mm-blocker {display: none !important;}
+	.mm-page {
+		box-shadow: none!important;
+		/*background: inherit;*/
+		width: 75%!important;
+		min-height: 100%!important;
+		height: auto!important;
+		margin: 0!important;
+		left: 25%!important;
+		top: 0!important;
+		position: relative!important;
+		z-index: 1;
+	}
+	.mm-menu {position: fixed; z-index: 0; width: 25%!important; padding: 0;}
+	.mm-menu.mm-top, .mm-menu.mm-right, .mm-menu.mm-bottom {top: 0!important; right: auto!important; bottom: auto!important; left: 0!important;}
+	.mm-menu:first-child, .mm-menu.mm-current {display: block;}
+
+	header .lead {background-color: transparent;}
+
+	table.results thead tr th, table.results tbody tr td {display: table-cell;}
+
+	.grid-sizer, .dashPanel li { width: 33.333333%;}
+
+	/* Tooltip - foundation ----------------- */
+	.tooltip > .nub {border-color: transparent transparent #333333 transparent; top: -10px;}
+	.tooltip.tip-top > .nub {border-color: #333333 transparent transparent transparent; top: auto; bottom: -10px;}
+	.tooltip.tip-left, .tooltip.tip-right {float: none !important;}
+	.tooltip.tip-left > .nub {border-color: transparent transparent transparent #333333; right: -10px; left: auto; top: 50%; margin-top: -5px;}
+	.tooltip.tip-right > .nub {border-color: transparent #333333 transparent transparent; right: auto; left: -10px; top: 50%; margin-top: -5px;}
+}
+
+/* Large & Up (desktop) ----------------- */
+@media only screen and (min-width: 64.063em) {
+	.mm-page {width: 80%!important; left: 20%!important;}
+	.mm-menu {width: 20%!important;}
+
+	h1.logo {padding-left: 40px; padding-right: 20px;}
+	.mm-menu > .mm-panel {padding: 20px;}
+	.nav-bar > li.active, .nav-bar > li > a {padding-left: 20px;}
+}
+
+/* xLarge & Up (widescreen) ------------- */
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+	.mm-page {width: 85%!important; left: 15%!important;}
+	.mm-menu {width: 15%!important;}
+}
+
+/* -----------------------------------------
+   Print Styles - Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+----------------------------------------- */
+.print-only {display: none !important;}
+
+@media print {
+	* {background: transparent !important; color: black !important; box-shadow: none !important; text-shadow: none !important;}
+	a, a:visited {text-decoration: underline;}
+	a[href]:after {content: " (" attr(href) ")";}
+	abbr[title]:after {content: " (" attr(title) ")";}
+	.ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content: "";}
+	pre, blockquote {border: 1px solid #999999; page-break-inside: avoid;}
+	thead {display: table-header-group;}
+	tr, img {page-break-inside: avoid;}
+	img {max-width: 100% !important;}
+	@page {margin: 0.5cm;}
+	p, h2, h3 {orphans: 3; widows: 3;}
+	h2, h3 {page-break-after: avoid;}
+	.hide-on-print {display: none !important;}
+	.print-only {display: block !important;}
+	.hide-for-print {display: none !important;}
+	.show-for-print {display: inherit !important;} 
+}/* End Print */
+
+/* -----------------------------------------
+   Old Slider
+----------------------------------------- */
+/*
+#slideOut {
+    width: 265px;
+    padding: 20px;
+	background: rgba(47, 47, 47, 0.7);
+	border-right:1px solid rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 0 0 5px 5px rgba(34, 34, 34, 0.3);
+    -moz-shadow: inset 0 0 5px 5px rgba(34, 34, 34, 0.3);
+    box-shadow: inset 0 0 5px 5px rgba(34, 34, 34, 0.3);
+}
+
+#slideOut p {margin-bottom:0px;}
+#slideOut span {padding-left:12px;}
+.pushRight {padding-right:12px;!important}
+
+.blockout {
+	background: #404141;
+	background-color: rgba(64, 65, 65, 0.8);
+	border: 1px solid #252525; 
+	-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.3); 
+	-moz-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+	box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.3); 
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.7);
+	filter: dropshadow(color=#000000, offx=0, offy=1);
+	text-align:center;
+	padding:6px 0;
+}
+*/
